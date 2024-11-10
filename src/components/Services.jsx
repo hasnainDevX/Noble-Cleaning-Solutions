@@ -1,6 +1,6 @@
 import React from "react";
 import HouseImg from "../assets/house.png";
-import CondoImg from "../assets/apartment.png";
+import CondoImg from "../assets/Apartment.png";
 import OfficeImg from "../assets/company.png";
 import Tagline from "./ui/Tagline";
 
