@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* background-color: #ff0000; */
+}
+@media only screen and (min-width: 1900px) {
+  .css-izap9d-MuiTypography-root{
+    font-size: 1.5rem !important;
+  }
+}
+
+.btn1 {
+  border: 2px solid white;
+  background: #2ca2fc;
+  text-transform: uppercase;
+  color: white;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn1 > span {
+  z-index: 20;
+}
+
+.btn1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -36px;
+  left: -100px;
+  background: white;
+  width: 50px;
+  height: 125px;
+  opacity: 20%;
+  transform: rotate(-45deg);
+}
+.cards > .btn1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background: white;
+  width: 50px;
+  height: 300px;
+  opacity: 20%;
+  transform: rotate(-35deg);
+}
+
+.btn1:hover:after {
+  left: 120%;
+  transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+  -webkit-transition: all 900ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+.btn2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 50px;
+  border-radius: 50px;
+  color: #2CA2FC;
+  outline: none;
+  position: relative;
+  overflow: hidden; /* Ensure the overlay stays within bounds */
+  z-index: 1; /* Ensures the text stays above the background */
+}
+
+.btn2:before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    to right,
+    #2CA2FC 50%,
+    rgb(255, 255, 255) 50%
+  );
+  background-size: 210% 100%;
+  background-position: right bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  transition: all 1s;
+  z-index: -1; /* Ensure the overlay goes behind the text */
+}
+
+.green {
+  background-color: rgb(15, 207, 255);
+  color: #2CA2FC; /* Initial text color */
+}
+
+.green:hover:before {
+  background-position: left bottom;
+}
+
+.green:hover {
+  transition: color 0.8s ease-in-out ; 
+  color: white; /* Change text color to white on hover */
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width of the scrollbar */
+  background-color: #2CA2FC; /* Set the color of the scroll area */
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 224, 205); /* Set the color of the thumb */
+  border-radius: 10px; /* Make the thumb rounded */
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(1, 255, 234); /* Change color on hover */
+}
