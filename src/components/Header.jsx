@@ -44,7 +44,7 @@ const Header = () => {
             className="-z-20 absolute left-0 w-[60%] lg:w-[40%] opacity-35"
           />
           <img
-            className="lg:w-[120%] w-[100%] rounded-xl  "
+            className="lg:scale-110 w-[100%] rounded-xl  "
             src={headerImg}
             alt="cleanhome"
           />

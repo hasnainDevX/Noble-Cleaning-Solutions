@@ -211,7 +211,7 @@ const Booking = () => {
       <div
         ref={sectionRef}
         id="get-a-quote"
-        className="md:mt-[4rem] mt-4 md:py-[4rem] md:px-[8rem] py-8 px-11 flex flex-col md:flex-row md:!justify-between 2xl:!justify-center items-center gap-[4rem]"
+        className="md:mt-[4rem] mt-4 md:py-[4rem] md:px-[8rem] py-8 px-16 flex flex-col md:flex-row md:!justify-between 2xl:!justify-center items-center gap-[4rem]"
       >
         <motion.div
           initial="hidden"
@@ -239,9 +239,7 @@ const Booking = () => {
           variants={imgVariant}
           className="form flex-1 flex items-center flex-col bg-[#0d397209] shadow-2xl 2xl:!max-w-3xl"
         >
-          <h3 className="text-center mx-auto text-3xl md:text-5xl md:px-4 font-bold text-blue-950 my-8">
-            Book an Appointment
-          </h3>
+          <h3 className="text-center mx-auto text-3xl md:text-5xl md:px-4 font-bold text-blue-950 my-8">Book an Appointment</h3>
 
           <form
             onSubmit={handleSubmit}
@@ -416,7 +414,7 @@ const Booking = () => {
 
             <button
               type="submit"
-              className={`md:block hidden btn2 border-none green outline-1 !px-9 !py-4 bg-white rounded-3xl text-[#2CA2FC] !border ${
+              className={`btn2 border-none green outline-1 !px-9 !py-4 bg-white rounded-3xl text-[#2CA2FC] !border ${
                 isSubmitting ? "opacity-50 cursor-not-allowed" : ""
               }`}
               disabled={isSubmitting}

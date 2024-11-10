@@ -17,7 +17,7 @@ const Faq = () => {
         <div className="image basis-[40%] 2xl:basis-[40%] md:p-6 ">
           <img
             src={Illustration1}
-            alt="cleaning"  
+            alt="cleaning"
           />
         </div>
         <div className="accordians basis-[60%] 2xl:basis-[50%] md:p-6 flex items-center">
