@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/logo.png"
 
 const Navbar = () => {
   const navItems = [
@@ -24,7 +25,9 @@ const Navbar = () => {
         className="flex max-w-[80%] px-4 mx-auto py-3 justify-around bg-white text-blue-900 border items-center relative h-[6rem]"
         style={{ boxShadow: "rgba(0, 0, 0, 0.45) 0px 25px 20px -20px" }}
       >
-        <h1 className="text-xl font-[600]">Noble Cleaning Solutions</h1>
+        <div className="flex justify-center items-center"><img src={Logo} alt="Noble Cleaning Solutions" className="w-[8rem] "/>
+        <h1 className="text-xl font-[600] -translate-x-2">Noble Cleaning Solutions</h1>
+        </div>
         <div className="justify-between gap-[2rem] 2xl:gap-[3rem] text-lg 2xl:text-2xl font-[500] md:flex hidden relative items-center">
           {/* Border bottom with glowing effect on hover */}
           {navItems.map(({title, link, id}) => (

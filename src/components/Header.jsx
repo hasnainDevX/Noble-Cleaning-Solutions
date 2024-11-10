@@ -4,6 +4,7 @@ import bubbles from "../assets/bubbles.png";
 import cleaningitems from "../assets/cleaningequipments.png";
 import Tagline from "./ui/Tagline";
 import { FloatingNav } from "./ui/MobileNav";
+import headerImg from "../assets/illustration2.png";
 
 const Header = () => {
   return (
@@ -43,8 +44,8 @@ const Header = () => {
             className="-z-20 absolute left-0 w-[60%] lg:w-[40%] opacity-35"
           />
           <img
-            className="lg:w-[100%] xl:w-[90%] w-[70%] rounded-xl  "
-            src={cleaningitems}
+            className="lg:w-[120%] w-[100%] rounded-xl  "
+            src={headerImg}
             alt="cleanhome"
           />
         </div>
