@@ -51,7 +51,6 @@ export default function CustomizedAccordions() {
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
-
   return (
     <div className="flex flex-col gap-3">
       <Accordion
@@ -93,7 +92,7 @@ export default function CustomizedAccordions() {
             <p className="flex flex-col">
               Booking a cleaning service is easy! You can book online through
               our website or contact us directly for a quote. You can email
-              mapleleafcleanersplus@gmail.com. We'll work with you to schedule a
+              noblecleaningsolutions.ca@gmail.com. We'll work with you to schedule a
               time that works best for you.
             </p>
           </Typography>

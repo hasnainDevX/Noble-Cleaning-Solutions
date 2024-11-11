@@ -10,8 +10,8 @@ import { default as React, useRef, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 import RangeSlider from "./ui/Range";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Booking = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -72,7 +72,8 @@ const Booking = () => {
       newErrors.phoneNumber = "Phone number is required";
       isValid = false;
     } else if (!phoneRegex.test(formData.phoneNumber.replace(/\D/g, ""))) {
-      newErrors.phoneNumber = "Please enter a valid 10-digit phone number without country code";
+      newErrors.phoneNumber =
+        "Please enter a valid 10-digit phone number without country code";
       isValid = false;
     }
 
@@ -185,10 +186,13 @@ const Booking = () => {
       }
     } catch (error) {
       console.error("Error sending form:", error);
-      toast.error("There was an issue submitting your form. Please try again.", {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose: 3000,
-      });
+      toast.error(
+        "There was an issue submitting your form. Please try again.",
+        {
+          position: toast.POSITION.TOP_RIGHT,
+          autoClose: 3000,
+        }
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -227,10 +231,12 @@ const Booking = () => {
             requirements, and we will get back to you within 24 hours.
           </p>
           <h3 className="2xl:text-xl font-semibold">Not convinced yet?</h3>
-          <button className="flex gap-2 justify-center items-center btn1 px-4 py-3 text-white rounded-3xl bg-[#2CA2FC] font-[500]">
-            <span>Contact</span>
-            <FaLocationArrow />
-          </button>
+          <a href="mailto:noblecleaningsolutions.ca@gmail.com">
+            <button className="flex gap-2 justify-center items-center btn1 px-4 py-3 text-white rounded-3xl bg-[#2CA2FC] font-[500]">
+              <span>Contact</span>
+              <FaLocationArrow />
+            </button>
+          </a>
         </motion.div>
 
         <motion.div
@@ -239,7 +245,9 @@ const Booking = () => {
           variants={imgVariant}
           className="form flex-1 flex items-center flex-col bg-[#0d397209] shadow-2xl 2xl:!max-w-3xl"
         >
-          <h3 className="text-center mx-auto text-3xl md:text-5xl md:px-4 font-bold text-blue-950 my-8">Book an Appointment</h3>
+          <h3 className="text-center mx-auto text-3xl md:text-5xl md:px-4 font-bold text-blue-950 my-8">
+            Book an Appointment
+          </h3>
 
           <form
             onSubmit={handleSubmit}
