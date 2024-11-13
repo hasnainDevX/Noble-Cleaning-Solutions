@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import bubbles from "../assets/bubbles.png";
-import cleaningitems from "../assets/cleaningequipments.png";
 import Tagline from "./ui/Tagline";
 import { FloatingNav } from "./ui/MobileNav";
 import headerImg from "../assets/illustration2.png";
