@@ -1,6 +1,5 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa";
-import { FaMinus } from "react-icons/fa6";
+import { FaDiamond, FaMinus } from "react-icons/fa6";
 
 const Pricing = () => {
   return (
@@ -21,18 +20,18 @@ const Pricing = () => {
           <h4>What is included?</h4>
           <ul className="space-y-2">
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" />
+              <FaDiamond className="text-cyan-500" />
               Flexible booking & service
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" />
+              <FaDiamond className="text-cyan-500" />
               Choose your own tasks
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" /> No hidden charges
+              <FaDiamond className="text-cyan-500" /> No hidden charges
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" /> Professional cleaning
+              <FaDiamond className="text-cyan-500" /> Professional cleaning
               staff
             </li>
             <li className="flex items-center gap-3">
@@ -57,25 +56,25 @@ const Pricing = () => {
           <h4>What is included?</h4>
           <ul className="space-y-2">
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" />
+              <FaDiamond  className="text-cyan-500" />
               Flexible booking & service
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" />
+              <FaDiamond  className="text-cyan-500" />
               Choose your own tasks
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" /> No hidden charges
+              <FaDiamond className="text-cyan-500" /> No hidden charges
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" /> Professional cleaning
+              <FaDiamond className="text-cyan-500" /> Professional cleaning
               staff
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" /> Same-day availability
+              <FaDiamond className="text-cyan-500" /> Same-day availability
             </li>
             <li className="flex items-center gap-3">
-              <FaCheckCircle className="text-cyan-500" /> Products Included
+              <FaDiamond className="text-cyan-500" /> Products Included
             </li>
           </ul>
           <a href="#get-a-quote">
