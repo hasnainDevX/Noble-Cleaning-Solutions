@@ -25,10 +25,10 @@ const Footer = () => {
           <div className="OurServices space-y-4 ">
             <h3 className="text-2xl">Our Services</h3>
             <ul className="flex flex-col gap-1">
-              <li>Window Cleaning</li>
-              <li>Carpet Cleaning</li>
               <li>Deep Cleaning</li>
-              <li>Office Cleaning</li>
+              <li>Regular Cleaning</li>
+              <li>Move in/out Cleaning</li>
+              <li>Airbnb Cleaning</li>
               <li>& more</li>
             </ul>
           </div>
