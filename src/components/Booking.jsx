@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import RangeSlider from "./ui/Range";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import EmailCopyButton from "./ui/EmailCopyButton"
 
 const Booking = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -232,10 +233,7 @@ const Booking = () => {
           </p>
           <h3 className="2xl:text-xl font-semibold">Not convinced yet?</h3>
           <a href="mailto:noblecleaningsolutions.ca@gmail.com">
-            <button className="flex gap-2 justify-center items-center btn1 px-4 py-3 text-white rounded-3xl bg-[#2CA2FC] font-[500]">
-              <span>Contact</span>
-              <FaLocationArrow />
-            </button>
+            <EmailCopyButton/>
           </a>
         </motion.div>
 
