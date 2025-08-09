@@ -66,20 +66,20 @@ const Services = () => {
         {/* Airbnb & Property Management - Priority Service */}
         <div className="card border bg-[#f5f8ff0a] rounded-md 2xl:py-6 relative">
           
-          {/* Priority Badge */}
+          {/* Priority Badge
           <div className="absolute -top-3 -right-3 z-10">
             <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
               <Star className="w-3 h-3" />
-              PRIORITY SERVICE
+               SERVICE
             </div>
-          </div>
+          </div> */}
           
           {/* Featured Border */}
           <div className="absolute inset-0  rounded-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
           
           <div className="image px-4 relative z-10">
             <div className="p-20 flex justify-center">
-                <img src={AirbnbImg} alt="" />
+                <img src={AirbnbImg} alt="airbnb" />
             </div>
           </div>
           
@@ -94,7 +94,7 @@ const Services = () => {
               </div>
             </div>
             <p className="text-sm 2xl:text-lg text-slate-600 text-center font-[500]">
-              Specialized cleaning for Airbnb hosts and property management companies. Quick turnarounds between guests, deep cleaning protocols, linen service, and bulk pricing for multiple properties.
+              Specialized cleaning for Airbnb hosts and property management businesses locally in our Area. Quick turnarounds between guests, deep cleaning protocols, linen service, and bulk pricing for multiple properties.
             </p>
           </div>
         </div>

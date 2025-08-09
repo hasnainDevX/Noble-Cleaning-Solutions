@@ -10,7 +10,7 @@ const cardData = [
   {
     id: 1,
     title: "Flexible Scheduling",
-    description: "Book your cleaning service at your convenience.",
+    description: "Book your cleaning service at your convenience - same day availability",
     icon: ClockIcon,
     bgColor: "",
   },
@@ -18,14 +18,14 @@ const cardData = [
     id: 2,
     title: "Professional Staff",
     description:
-      "Our experienced cleaners are dedicated to providing exceptional service.",
+      "Our experienced cleaners are dedicated to providing exceptional service ",
     icon: UsersIcon,
     bgColor: "bg-blue-400",
   },
   {
     id: 3,
     title: "Competitive Pricing",
-    description: "High-quality cleaning services at affordable rates.",
+    description: "High-quality and professional cleaning services at affordable rates",
     icon: DollarSignIcon,
     bgColor: "bg-blue-500",
   },

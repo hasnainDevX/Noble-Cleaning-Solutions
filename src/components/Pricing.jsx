@@ -1,5 +1,5 @@
 import React from "react";
-import { X, Star, Zap, Shield, Clock, Sparkles, Award, Diamond } from "lucide-react";
+import { X, Star, Zap, Shield, Clock, Sparkles, Award, Diamond, Home } from "lucide-react";
 
 const Pricing = () => {
   return (
@@ -18,9 +18,9 @@ const Pricing = () => {
         </div>
       </div>
 
-      <div className="text-slate-900 flex gap-8 lg:gap-12 w-full lg:justify-center flex-col md:flex-row md:justify-between max-w-6xl mx-auto">
+      <div className="text-slate-900 flex gap-8 lg:gap-12 w-full lg:justify-center flex-col md:flex-row md:justify-between max-w-7xl mx-auto">
         {/* Standard Plan */}
-        <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-slate-200 bg-white md:w-[30vw] rounded-2xl shadow-lg">
+        <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300 border border-slate-200 bg-white md:w-[30vw] rounded-2xl shadow-lg">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="bg-slate-600 text-white px-4 py-1 rounded-full text-sm font-medium">
               STANDARD
@@ -30,7 +30,7 @@ const Pricing = () => {
           <div className="text-center pt-4">
             <Shield className="w-12 h-12 text-cyan-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-slate-800 mb-2">Standard</h2>
-            <p className="text-slate-600 text-sm">Perfect for regular cleaning needs</p>
+            <p className="text-slate-600 text-xs">Perfect for regular cleaning needs</p>
           </div>
 
           <div className="price p-6 border-2 rounded-2xl border-cyan-200 text-center bg-gradient-to-br from-cyan-50 to-blue-50 relative overflow-hidden">
@@ -45,6 +45,7 @@ const Pricing = () => {
               <span className="text-5xl font-bold text-blue-900">$30</span>
               <span className="text-lg font-medium text-slate-700 ml-1">/Hour</span>
             </div>
+            <span className="text-slate-600 text-[12px]">3 hour minimum appointment</span>
           </div>
 
           <div className="space-y-4">
@@ -103,7 +104,7 @@ const Pricing = () => {
         </div>
 
         {/* Premium Plan */}
-        <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-gradient-to-r from-cyan-400 to-blue-500 bg-white md:w-[30vw] rounded-2xl shadow-xl">
+        <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300  border-2 border-gradient-to-r from-cyan-400 to-blue-500 bg-white md:w-[30vw] rounded-2xl shadow-xl">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
               <Award className="w-4 h-4 inline mr-1" />
@@ -192,12 +193,97 @@ const Pricing = () => {
             </button>
           </a>
         </div>
+
+       {/* Airbnb Turnovers Plan */}
+        <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300  border-2 border-gradient-to-r from-orange-400 to-red-500 bg-white md:w-[30vw] rounded-2xl shadow-xl">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+              <Home className="w-4 h-4 inline mr-1" />
+              AIRBNB
+            </div>
+          </div>
+          
+          <div className="text-center pt-4">
+            <Home className="w-12 h-12 text-orange-500 mx-auto mb-4" />
+            <h2 className="text-2xl font-bold text-slate-800 mb-2">Airbnb Turnovers</h2>
+            <p className="text-slate-600 text-sm">Trusted locally in our area</p>
+          </div>
+
+          <div className="price p-6 border-2 rounded-2xl border-gradient-to-r from-orange-300 to-red-300 text-center bg-gradient-to-br from-orange-50 via-red-50 to-pink-50 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-r from-orange-200 to-red-200 rounded-full -translate-y-12 translate-x-12 opacity-60"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-r from-pink-200 to-orange-200 rounded-full translate-y-8 -translate-x-8 opacity-40"></div>
+            <div className="relative z-10">
+              <span className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">$35</span>
+              <span className="text-lg font-medium text-slate-700 ml-1">/Hour</span>
+              <div className="mt-2">
+                <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Regular Cleaning: $30/hr
+                </div>
+              </div>
+            </div>
+                <span className="text-[12px] text-slate-600 translate-y-4">2 hours minimum appointment</span>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-slate-800 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-orange-500" />
+              Complete turnover service!
+            </h4>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
+                  <Diamond className="text-white w-3 h-3" />
+                </div>
+                <span className="text-slate-700 font-medium">Deep cleaning service</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
+                  <Diamond className="text-white w-3 h-3" />
+                </div>
+                <span className="text-slate-700 font-medium">Fresh linen service</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
+                  <Diamond className="text-white w-3 h-3" />
+                </div>
+                <span className="text-slate-700 font-medium">Restocking amenities</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-gradient-to-r from-orange-400 to-red-400 rounded-full flex items-center justify-center">
+                  <Diamond className="text-white w-3 h-3" />
+                </div>
+                <span className="text-slate-700 font-medium">Property inspection report</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-orange-400 rounded-full flex items-center justify-center">
+                  <Diamond className="text-white w-3 h-3" />
+                </div>
+                <span className="text-slate-700 font-medium">Fast turnaround times</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-orange-400 rounded-full flex items-center justify-center">
+                  <Diamond className="text-white w-3 h-3" />
+                </div>
+                <span className="text-slate-700 font-medium">Bulk pricing discounts</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="#get-a-quote" className="block">
+            <button className="group relative w-full bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <span className="flex items-center justify-center gap-2">
+                Book Turnover
+                <Home className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+              </span>
+            </button>
+          </a>
+        </div>
       </div>
 
       <div className="text-center mt-12">
         <p className="text-slate-600 text-sm max-w-2xl mx-auto">
-          All prices are transparent with no hidden fees. Local residents automatically receive a 15% discount at checkout. 
-          Professional, insured, and background-checked staff for your peace of mind.
+          All prices are transparent with no hidden fees. Local residents receive a 15% discount at the time of payment as mentioned in packages.
         </p>
       </div>
     </div>

@@ -298,7 +298,7 @@ const Booking = () => {
             <div className="row flex w-full px-5 gap-3 flex-wrap md:flex-nowrap">
               <div className="flex flex-col w-full">
                 <label className="text-sm font-semibold mb-1">
-                  Address <span className="text-red-500">*</span>
+                  Street and postal code <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -306,7 +306,7 @@ const Booking = () => {
                   className={`border ${
                     errors.address ? "border-red-500" : "border-blue-300"
                   } p-2 rounded-lg placeholder:text-blue-950 focus:outline-none focus:ring-1 focus:ring-blue-500`}
-                  placeholder="Enter your address"
+                  placeholder="Enter your Street and postal code"
                   value={formData.address}
                   onChange={handleInputChange}
                 />
@@ -389,7 +389,7 @@ const Booking = () => {
                 handleChange={handleSliderChange}
                 className="flex-[60%]"
               />
-              <div className="flex gap-2 flex-wrap flex-[50%]">
+              <div className="flex gap-2 flex-wrap flex-[50%] text-sm mt-1">
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input
                     type="radio"
@@ -411,6 +411,28 @@ const Booking = () => {
                     className="w-4 h-4 text-blue-500"
                   />
                   <span>Convenient Package</span>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="package"
+                    value="moveInOut"
+                    checked={formData.package === "moveInOut"}
+                    onChange={handleInputChange}
+                    className="w-4 h-4 text-blue-500"
+                  />
+                  <span>Move in/out Cleaning</span>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="package"
+                    value="airbnb"
+                    checked={formData.package === "airbnb"}
+                    onChange={handleInputChange}
+                    className="w-4 h-4 text-blue-500"
+                  />
+                  <span>Airbnb Package</span>
                 </label>
                 <a href="#pricing" className="text-sm font-medium my-3 block">
                   Compare Packages
