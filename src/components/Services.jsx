@@ -78,8 +78,8 @@ const Services = () => {
           <div className="absolute inset-0  rounded-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
           
           <div className="image px-4 relative z-10">
-            <div className="p-20 flex justify-center">
-                <img src={AirbnbImg} alt="airbnb" />
+            <div className="p-24 flex justify-center">
+                <img src={AirbnbImg} alt="airbnb" className="max-w-[200px]"/>
             </div>
           </div>
           

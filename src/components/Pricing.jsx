@@ -13,7 +13,7 @@ const Pricing = () => {
         </h1>
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-100 to-cyan-100 rounded-full border border-green-200">
           <Star className="text-green-600 w-5 h-5" />
-          <span className="text-green-700 font-medium">Special 15% discount for local residents</span>
+          <span className="text-green-700 font-medium">Special 15% discount for Edmonton residents</span>
           <Star className="text-green-600 w-5 h-5" />
         </div>
       </div>
@@ -128,7 +128,7 @@ const Pricing = () => {
                   SAVE $10
                 </span>
               </div>
-              <span className="text-5xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">$35</span>
+              <span className="text-5xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">$40</span>
               <span className="text-lg font-medium text-slate-700 ml-1">/Hour</span>
               <div className="mt-2">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
@@ -195,7 +195,7 @@ const Pricing = () => {
         </div>
 
        {/* Airbnb Turnovers Plan */}
-        <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300  border-2 border-gradient-to-r from-orange-400 to-red-500 bg-white md:w-[30vw] rounded-2xl shadow-xl">
+        {/* <div className="group relative p-8 2xl:py-12 space-y-6 hover:shadow-2xl transition-all duration-300  border-2 border-gradient-to-r from-orange-400 to-red-500 bg-white md:w-[30vw] rounded-2xl shadow-xl">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
               <Home className="w-4 h-4 inline mr-1" />
@@ -278,7 +278,7 @@ const Pricing = () => {
               </span>
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className="text-center mt-12">
