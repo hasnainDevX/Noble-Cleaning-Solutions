@@ -143,7 +143,7 @@ const Booking = () => {
 
     const emailData = {
       to_name: "Admin",
-      from_name: "Maple Leaf Cleaners Plus",
+      from_name: "Noble Cleaning Solutions",
       client_name: formData.fullName,
       client_phone: formData.phoneNumber,
       client_address: formData.address,

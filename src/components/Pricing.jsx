@@ -42,7 +42,7 @@ const Pricing = () => {
                   SAVE $10
                 </span>
               </div>
-              <span className="text-5xl font-bold text-blue-900">$30</span>
+              <span className="text-5xl font-bold text-blue-900">$35</span>
               <span className="text-lg font-medium text-slate-700 ml-1">/Hour</span>
             </div>
             <span className="text-slate-600 text-[12px]">3 hour minimum appointment</span>
